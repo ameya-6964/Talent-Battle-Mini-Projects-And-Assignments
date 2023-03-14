@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+button{
+   margin: 1rem;
+   cursor: pointer;
+   background-color: blue ;
+   color: white;
+   height: 50px;
+   width: 100px;
+   font-size: 1rem;
+}
+input{
+    margin: 1rem;
+    height: 25px;
+    width: 150px;
+}
+
+.result
+{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: red;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: 2 2 2;
+    align-items: center;
+    
+  }
+
+  h1{
+    font-size: 40px;
+  }
+  input{
+    margin-top: 1rem;
+    min-width: 30vh;
+    min-height: 50px;
+    font-size: 40px;
+  
+  }
+  
+
+  button{
+    margin-top: 1rem;
+    font-size: 30px; 
+  }
+  textarea{
+    margin-top: 1rem;
+  }
+  #output{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color:black;
+    padding: 1rem;
+  }
+  
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Object Oriented Programming Assignment</h1>
+    <hr />
+    <h1 style="text-align: center">
+      Question :- &nbsp; Accepting Data From Student Class Which Is Having Three
+      Instances And Then Displaying Through Alert Box
+    </h1>
+    <form name="student">
+      <h2 style="text-align: center">Student Form</h2>
+      <div class="row">
+        <label for="firstName">First Name</label>
+        <input type="text" name="fname" required placeholder="ABC" />
+      </div>
+      <div class="row">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lname" required placeholder="XYZ" />
+      </div>
+      <div class="row">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" required placeholder="ABC@XYZ" />
+      </div>
+      <div class="row">
+        <label for="DOB">Date Of Birth</label>
+        <input type="date" name="DOB" maxlength="10" />
+      </div>
+      <div class="row">
+        <label for="rollNumber">Roll Number</label>
+        <input
+          type="number"
+          name="rollNumber"
+          maxlength="3"
+          required
+          placeholder="001"
+        />
+      </div>
+      <div class="row">
+        <label for="percentage">Percentage(%)</label>
+        <input
+          type="number"
+          name="percentage"
+          maxlength="3"
+          required
+          placeholder="85"
+        />
+      </div>
+      <div class="row">
+        <button type="submit" id="button" onclick="createStudent()">
+          Click To View Information
+        </button>
+      </div>
+    </form>
+    <script>
+      function studentObject() {
+        this.fname = "";
+        this.lname = "";
+        this.email = "";
+        this.DOB = "";
+        this.rollNumber = "";
+        this.percentage = "";
+      }
+      // Creating Object
+      var newStudent = new studentObject();
+      function createStudent() {
+        //Getting Input From User
+        newStudent.fname = student.fname.value;
+        newStudent.lname = student.lname.value;
+        newStudent.email = student.email.value;
+        newStudent.DOB = student.DOB.value;
+        newStudent.rollNumber = student.rollNumber.value;
+        newStudent.percentage = student.percentage.value;
+        alert(
+          //Displaying Data From User Input
+          "First Name : " +
+            newStudent.fname +
+            "\n" +
+            "Last Name : " +
+            newStudent.lname +
+            "\n" +
+            "Email : " +
+            newStudent.email +
+            "\n" +
+            "Date Of Birth : " +
+            newStudent.DOB +
+            "\n" +
+            "Roll Number : " +
+            newStudent.rollNumber +
+            "\n" +
+            "Percentage : " +
+            newStudent.percentage +
+            "\n"
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <link rel="icon" href="/media/icons/airplane.svg" />
+    <link rel="stylesheet" href="/CSS Files/form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo">Airoli Jr College</h1>
+        <ul>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="Courses.html"> Academics </a></li>
+          <li><a href="admission-form.html"> Admission </a></li>
+          <li><a href="campus.html"> Gallery </a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Intrested Students Kindly Fill This Form</h2>
+      <h3>
+        You Will Receive Further Details Through Email Or Our Staff Will Revert
+        Back
+      </h3>
+      <button>Fill Form Now!!!!</button>
+    </section>
+    <section class="form-style">
+      <form action="">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="visitor_name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="Your Email"
+            placeholder="abc@xyz.com"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="visitor_phone"
+            placeholder="+91-XXXXXXXXX"
+            required
+          />
+        </div>
+        <br />
+        <div class="elem-group inlined">
+          <label for="ssc">SSC %</label>
+          <input
+            type="number"
+            id="ssc"
+            name="SSC Percentage"
+            placeholder="%"
+            min="35"
+            max="100"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Average Of 8 and 9 Standard</label>
+          <input
+            type="number"
+            id="average"
+            name="Average89"
+            placeholder="%"
+            min="35"
+            max="100"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="Appointment">Book Appointment With Teachers</label>
+          <input type="date" id="Appointment" name="Appointment" required />
+        </div>
+        <div class="elem-group">
+          <label for="Streams">Select Stream</label>
+          <select id="Streams" name="Intrested Stream" required>
+            <option value="">Choose a Stream from the List</option>
+            <option value="connecting">Science</option>
+            <option value="adjoining">Arts</option>
+            <option value="adjacent">Commerce</option>
+          </select>
+        </div>
+        <hr />
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea
+            id="message"
+            name="visitor_message"
+            placeholder="Tell us anything else that might be important."
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="footer">
+      <p>
+        Copyright © College Website<strong> Developed By Ameya </strong>|
+        Contact Us: +91 7715006964
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+html {
+    font-family: sans-serif;
+    }
+      
+body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    }
+    
+    h1{
+       font-size: 5rem;
+    }
+
+    p{
+        font-size: 3rem;
+     }
+
+     label,input
+     {
+        font-size: 2rem;
+     }
+
+     .guessSubmit{
+        margin-top: 1rem;
+        cursor: pointer;
+     }

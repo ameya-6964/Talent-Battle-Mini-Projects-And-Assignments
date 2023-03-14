@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel-Booking</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      form {
+        padding: 20px;
+        margin-left: 400px;
+      }
+      button a {
+        text-decoration: none;
+        color: black;
+      }
+      border-style th,
+      td {
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      * {
+        background-color: rgb(185, 233, 233);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Reserve A Hotel And Get Amazing Rewards</h1>
+
+    <img
+      style="margin-left: 250px"
+      src="/Media/Online.png"
+      height="300px"
+      width="1000px"
+    />
+
+    <br />
+
+    <div class="border-style">
+      <table border="1" width="100%">
+        <tr class="no-underline">
+          <td style="text-align: center"><a href="HOME.HTML">Home </a></td>
+          <td style="text-align: center">
+            <a href="Heritage.html">Heritage</a>
+          </td>
+          <td style="text-align: center"><a href="Gallery.html">Gallery</a></td>
+        </tr>
+      </table>
+    </div>
+    <form action="">
+      <label for="Name"> Name <span>*</span></label>
+      <input type="text" id="Name" placeholder="Name" required />
+
+      <label for="lastname"> &nbsp;&nbsp;&nbsp;Last Name <span>*</span></label>
+      <input type="text" id="lastname" placeholder="Lastname" required />
+
+      <label for="Email"> &nbsp;&nbsp;&nbsp;Email <span>*</span></label>
+      <input type="email" id="Email" placeholder="abc@xyz.com" required />
+      <br /><br />
+
+      <label for="Address1"> Address1 <span>*</span> </label>
+      <input
+        type="text"
+        id="Address1"
+        placeholder="StreetName/Locality/Sector"
+        required
+      />
+
+      <label for="Address2"> &nbsp;&nbsp;&nbsp; Address2 </label>
+      <input type="text" id="Address2" placeholder="If required" />
+
+      <br /><br />
+      <label for="State"> State <span>*</span></label>
+      <input type="text" id="State" placeholder="Maharashtra" required />
+
+      <label for="City"> &nbsp;&nbsp;&nbsp;City<span>*</span> </label>
+      <input type="text" id="City" placeholder="Thane" required />
+
+      <label for="Zipcode"> &nbsp;&nbsp;&nbsp;Zipcode <span>*</span></label>
+      <input type="number" id="Zipcode" placeholder="400xxx" required />
+      <br /><br />
+      <label for="Place"> Trip Intrested <span>*</span></label>
+      <select>
+        <option value="Ajanta">Ajanta</option>
+        <option value="Alibaug">Alibaug</option>
+        <option value="Elephanta">Elephanata-cave</option>
+        <option value="ellora">Ellora</option>
+        <option value="Harishchandragad">Harishchandragad</option>
+        <option value="Karla">Karla</option>
+        <option value="Murud">Murud</option>
+        <option value="Pune">Pune</option>
+        <option value="Rajmachi">Rajmachi</option>
+        <option value="Ratnagiri">Ratnagiri</option>
+        <option value="Sinhagad">Sinhagad</option>
+      </select>
+      <label for="No of Persons"
+        >&nbsp;&nbsp;&nbsp; Adults <span>*</span></label
+      >
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="5+">5+</option>
+      </select>
+      <label for="No of Persons"
+        >&nbsp;&nbsp;&nbsp; Childrens <span>*</span></label
+      >
+      <select>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="5+">5+</option>
+      </select>
+      <br /><br />
+      <label for="Checkin">Check-In Date <span>*</span></label>
+      <input type="date" id="Checkin" required />
+      <label for="Checkin-Time"
+        >&nbsp;&nbsp;&nbsp;Checkin-Time <span>*</span></label
+      >
+      <input type="time" id="Checkin-Time" required />
+      <label for="Checkout"
+        >&nbsp;&nbsp;&nbsp;Check-out Date <span>*</span></label
+      >
+      <input type="date" id="Check-out" required />
+      <label for="Checkout-Time"
+        >&nbsp;&nbsp;&nbsp;Checkout-Time <span>*</span></label
+      >
+      <input type="time" id="Checkout-Time" required />
+      <br /><br />
+      <label for="Room-preferance">Room-Preferance<span>*</span></label>
+
+      <input type="radio" value="Standard" required />Standard
+
+      <input type="radio" value="Standard" required />&nbsp;&nbsp;&nbsp;Deluxe
+
+      <input type="radio" value="Standard" required />&nbsp;&nbsp;&nbsp;Suit
+      <br /><br />
+      <label for="Membership">Do you Have Membership??</label>
+      <input type="radio" value="yes" />Yes
+      <input type="radio" value="no" />&nbsp;&nbsp;&nbsp;No <br /><br />
+      <label for="want-membership"> Do You Wish To Have Membership??</label>
+      <button type="button">
+        Yes
+        <small
+          >&nbsp;&nbsp;&nbsp;Members get Exclusive Perks (1299 per Month)</small
+        >
+      </button>
+      <button type="button">I Will Continue Without Membership</button>
+      <br /><br />
+      <label for="Vaccination"></label> Please Upload Vaccination
+      Certification<small>&nbsp;&nbsp;&nbsp;(Combine in Single PDF)</small>
+      <input type="file" id="Vaccination" />
+      <br /><br />
+      <label for="Payment"> Payment Method </label>
+      <select for="Payment">
+        <option value="Debit-card">Debit-card/Credit-card</option>
+        <option value="Net-Banking">Net-Banking</option>
+        <option value="UPI">UPI</option>
+      </select>
+      <br /><br /><br />
+      <div style="margin-left: 300px">
+        <button type="submit">
+          <a href="Confirmation.html" target="_blank"> Submit </a>
+        </button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+    <hr />
+    <div>
+      <table width="100%">
+        <tr>
+          <th>
+            <a style="text-decoration: none" href="#">Go To Top</a>
+          </th>
+          <th>
+            <a style="text-decoration: none" href="home.html">Home</a>
+          </th>
+          <th>
+            <a style="text-decoration: none" href="Heritage.html">Heritage</a>
+          </th>
+          <th>
+            <a style="text-decoration: none" href="Gallery.html">Gallery</a>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
